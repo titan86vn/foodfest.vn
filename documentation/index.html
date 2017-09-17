@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>ergo 7</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="css/simple-sidebar.css" rel="stylesheet">
+      <!-- code mirror -->
+      <link rel=stylesheet href="codemirror/css/docs.css">
+      <link rel="stylesheet" href="codemirror/css/codemirror.css">
+      <link rel="stylesheet" href="codemirror/css/foldgutter.css" />
+      <script src="codemirror/js/codemirror.js"></script>
+      <script src="codemirror/js/foldcode.js"></script>
+      <script src="codemirror/js/foldgutter.js"></script>
+      <script src="codemirror/js/brace-fold.js"></script>
+      <script src="codemirror/js/xml-fold.js"></script>
+      <script src="codemirror/js/markdown-fold.js"></script>
+      <script src="codemirror/js/comment-fold.js"></script>
+      <script src="codemirror/js/javascript.js"></script>
+      <script src="codemirror/js/xml.js"></script>
+      <script src="codemirror/js/markdown.js"></script>
+      <script src="codemirror/js/css.js"></script>
+      <style type="text/css">
+         .CodeMirror {    border-top: 1px solid #CCC;
+         border-bottom: 1px solid #CCC;}
+         .code_wrapper{max-width: 50em;}
+         a code,a
+         {
+         color: #25A8C7;
+         font-weight: 500;}
+      </style>
+      <!-- -->
+   </head>
+   <body>
+      <div id="wrapper">
+         <!-- Sidebar -->
+         <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+               <li class="sidebar-brand">
+                  <a href="#" class="main-head">
+                  ergo 7 
+                  </a>
+                  <a href="#menu-toggle" class=" bt-menu-trigger" id="menu-toggle"><span>Menu</span></a>
+               </li>
+               <li>
+                  <a href="#">General</a>
+               </li>
+               <li>
+                  <a href="#home">Home</a>
+               </li>
+               <li>
+                  <a href="#timeline">Timeline</a>
+               </li>
+               <li>
+                  <a href="#team">Artist Lineup</a>
+               </li>
+               <li>
+                  <a href="#sponsors">Sponsors</a>
+               </li>
+               <li>
+                  <a href="#gallery">Gallery</a>
+               </li>
+               <li>
+                  <a href="#faq">Ask us</a>
+               </li>
+               <li>
+                  <a href="#contact">Contact</a>
+               </li>
+               <li>
+                  <a href="#comingSoon">coming Soon/404</a>
+               </li>
+            </ul>
+         </div>
+         <!-- /#sidebar-wrapper -->
+         <!-- Page Content -->
+         <div id="page-content-wrapper">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-lg-12">
+                     <h1 class="page-head">ergo 7</h1>
+                     <p>Thank you for purchasing ergo7 theme. please feel free to connect us on our support forum for your any your questions regarding the theme.</p>
+                
+            
+                
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <h2 class="section-head" id="home">Home</h2>
+        This Template includes 3 Home Layouts:
+		<ol type="a">
+		<li>Default home page(index.html)</li>
+		<li>Video background(home-1.html)</li>
+		<li>Slider(home-2.html)</li>
+		</ol>
+ <h2>a) Default home page </h2>
+				 This home section follows with three steps:
+				 <ol>
+				 <li>Parallax background</li>
+				 <li>CSS blend modes</li>
+				 <li>Changing background image</li>
+				 </ol>
+
+ 
+                  <p>1.Parallax background   <br>
+                   Create a list of elements giving each item that you want to move within your parallax scene a class of layer and a data-depth attribute specifying its depth within the scene. A depth of 0 will cause the layer to remain stationary, and a depth of 1 will cause the layer to move by the total effect of the calculated motion. Values inbetween 0 and 1 will cause the layer to move by an amount relative to the supplied ratio.</p>
+                  <div  class="code_wrapper">
+                     <textarea id="code-html3" name="code-html2"> 
+	 <div id="container" class="wrapper">
+                    <ul id="scene" class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" data-mode="cursor">
+                        <li class="layer" data-depth="0.10">
+                            <div class="background"></div>
+                        </li>
+                        <li>
+                            <div class="bg_pattern"></div>
+                        </li>
+                        <li class="layer" data-depth="0.20">
+                            <h1 class="home_title">ergo7</h1>
+                        </li>
+                        <li class="layer" data-depth="0.20">
+                            <p class="title_content1">&nbsp;YOU ARE THE DJ YOUR LIFE IS THE PARTY&nbsp;</p>
+                        </li>
+                    </ul>
+                </div>
+
+	   
+   </textarea>
+                  </div>
+                  <br>
+                  <p>2. CSS blend modes <br>
+                  The background-blend-mode CSS property describes how the element's background images should blend with each other and the element's background color. 
+                  In home page <code>Multiply</code> blend mode is used for light effects .By using <code>animated_bg.js</code> background colour automatically changed in specified time interval</p>
+                  <br>
+                  <p>3.Changing background image<br>
+                     Background image can be changed in <code>style.css</code> 
+                  </p>
+                  <div  class="code_wrapper">
+                     <textarea id="code-css3" name="code">
+                     background: url(../images/background.jpg) no-repeat 50% 100%;
+                     -webkit-background-size: cover;
+                     -moz-background-size: cover;
+                     -o-background-size: cover;
+                     background-size: cover;
+                     position: absolute;
+                     width: 110%;
+                     left: -5%;
+                     top: -5%;
+                     bottom: -25px;
+                     background-color: #33aaff;
+                     background-blend-mode: Multiply;
+                     </textarea>
+                  </div>
+ <h2>b)Video background(home-1.html)</h2>
+    <p>1.Creating SVG text</p>
+                        <p>You can create SVG elements in html page. The x and y values are the offset positions for the text.</p>
+
+
+                        <form>
+                            <div class="code_wrapper" style=" margin-bottom: 1em">
+                                <textarea id="code-html4" name="code-html4">
+                         <svg >
+                              <defs>
+                                 <mask id="mask" x="0" y="0" width="100%" height="100%" >
+                                    <!-- ALPHA RECTANGLE -->
+                                    <rect id="alpha" x="0" y="0" width="100%" height="100%"/>
+                                    <!--ALL TEXT YOU WANT -->
+                                    <text id="title" x="50%" y="45%">ergo7</text>
+                                    <text id="subtitle" x="50%" y="65%" >YOU ARE THE DJ YOUR LIFE IS THE PARTY</text>
+                                 </mask>
+                              </defs>
+                              <rect id="base" x="0" y="0" width="100%" height="100%"/>
+                           </svg>
+                                </textarea>
+                            </div>
+
+
+                        </form>
+
+
+                        <p>2.Changing transparent text background colour </p>
+                        <p>For this you want to edit style in <code> html</code> file</p>
+
+                        <div class="code_wrapper" style="margin-bottom: 1em">
+                            <textarea id="code-css2" name="code-css2">
+ svg #base 
+         {
+         fill: rgba(0, 0, 0, 0.79);
+         -webkit-mask: url(#mask);
+         mask: url(#mask);
+         }
+
+                            </textarea>
+                        </div>
+
+                        <p>3.Changing video background </p>
+                        <p>Build the HTML5 video tags then link your video source
+                  
+                        </p>
+                  <div class="code_wrapper">
+ <textarea id="code-html7" name="code-html7">
+ <video autoplay loop poster="videos/CheerUp.jpg" id="bgvid">
+                           <source src="videos/CheerUp.webm" type="video/webm">
+                           <source src="videos/CheerUp.mp4" type="video/mp4">
+                        </video></textarea>
+</div>
+
+                    
+<p>Older browsers will not recognize the video formats. For those browsers we create a background-image for the element</p>
+<p>
+<i>
+Note:The video needs to be small, and compressed as effectively as possible. At the same time, it needs to scale across different devices and their associated screens. In advanced cases, you might want to consider using inline media queries or matchmedia to send different quality versions of the video to different screen sizes. Try to keep the video under 5mb; ideally, under 500k.</i>
+</p>
+
+                        <h2  id="slider">c)Slider(home-2.html)</h2>
+
+                        <p>1.Ceating SVG text</p>
+                        <p>First we will create our SVG element. The x and y values are the offset positions for the text. The font(s) we wish to use are written in style sheet.Replace the text values with your own</p>
+
+
+                        <form>
+                            <div class="code_wrapper" style=" margin-bottom: 1em">
+                                <textarea id="code-html8" name="code-html8">
+<svg id="ergo_slider_svgtext"  >
+                                 <defs >
+                                    <mask id="mask" x="0" y="0" width="100%" height="100%" >
+                                       <!-- ALPHA RECTANGLE  -->
+                                       <rect id="alpha" x="0" y="0" width="100%" height="100%"/>
+                                       <svg >
+                                          <!--ALL TEXT YOU WANT -->
+                                          <text id="ergo_title"  x="50%" text-anchor="middle"   y="25%"  dy=".6em" >ergo7</text>
+                                          <text id="ergo_subtitle"x="50%" text-anchor="middle" y="80%"   >YOU ARE THE DJ YOUR LIFE IS THE PARTY </text>
+                                          <line x1="10%" y1="85%" x2="90%" y2="85%" style="stroke-width: 1; stroke: black;"/>
+                                          <!-- <rect id="svg_outline"  height="90%" width="95%" x="2.5%" y="5%" style="fill:none;stroke-width:.7;stroke:rgb(0,0,0)" />
+                                             --> 
+                                       </svg>
+    </mask>
+</defs>
+<rect id="base" x="0" y="0" width="100%" height="100%"/>
+</svg>
+                                </textarea>
+                            </div>
+
+
+                        </form>
+
+
+                        <p>Change transparent text background colour </p>
+                        <p>For this you want to edit style in <code>html</code> file</p>
+
+                        <div class="code_wrapper" style="margin-bottom: 1em">
+                            <textarea id="code-css4" name="code">
+ svg #base 
+         {
+         fill: rgba(0, 0, 0, 0.79);
+         -webkit-mask: url(#mask);
+         mask: url(#mask);
+         }
+                            </textarea>
+                        </div>
+
+                        <p>3.Changing background image </p>
+                        <p>You can customise slider in <code>style.css</code> file. 
+                        </p>
+
+                        <div class="code_wrapper">
+                            <textarea id="code-css5" name="code-css5">
+
+.ergo_slider-pic1.home-slider {
+     background: url(../images/1.jpg) no-repeat center center;
+}
+.ergo_slider-pic2.home-slider {
+     background: url(../images/2.jpg) no-repeat center center;
+}
+.ergo_slider-pic3.home-slider {
+     background: url(../images/1.jpg) no-repeat center center;
+}
+                            </textarea>
+                        </div>
+
+
+
+
+                  <h2  class="section-head"  id="timeline">Timeline</h2>
+                  <p>There are five circle in timeline as default.You can add or remove circle as you wish. </p>
+                  <p>1.Adding one more circle</p>
+                  <p>Copy and past the following line into timeline section to add one more circle</p>
+                  <div   class="code_wrapper">
+                     <div   class="code_wrapper">
+                        <textarea id="code-html5" name="code-html2"> 
+  	   <div class="column "   id="column-six" >
+                              <div class="circle-wrap "   id="circle-six">
+							   <div class="timeline-circle-animation"> </div>
+                                 <div class="line line-six" >
+                                    <div class="default"></div>
+                                    <div class="active"></div>
+                                 </div>
+                              </div>
+							  <div class="time-wrap" >
+                                 <h5>Artist</h5>
+                                 <ul>
+                                   <li>24 December</li>
+                                   <li>13:00-14:00</li>
+                                 </ul>
+                              </div>
+                           </div>   
+   </textarea>
+                     </div>
+                  </div>
+                  <br>
+                  <p>2.Remove a circle<br>
+                     You can remove circles from bottom.Copy the following code for four circle time-line
+                  </p>
+                  <div   class="code_wrapper">
+                     <textarea id="code-html6" name="code-html2"> 
+		 
+	        <!-- START COLUMN ONE -->
+                           <div class="column" id="column-one">
+                              <div class="circle-wrap" id="circle-one">
+                                 <div class="timeline-circle-animation">
+                                    <!--  FOR ANIMATION ON MOUSE OVER -->
+                                 </div>
+                                 <div class="line line-one">
+                                    <div class="default"></div>
+                                    <div class="active"></div>
+                                 </div>
+                              </div>
+                              <div class="time-wrap">
+                                 <h5>Flint Brook</h5>
+                                 <ul>
+                                    <li>20 December</li>
+                                    <li>23:00-0:00</li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <!-- END COLUMN ONE -->
+                           <!-- START COLUMN TWO -->
+                           <div class="column" id="column-two">
+                              <div class="circle-wrap  main-circle" id="circle-two">
+                                 <div class="timeline-circle-animation">
+                                    <!-- FOR ANIMATION ON MOUSE OVER -->
+                                 </div>
+                              </div>
+                              <div class="time-wrap ">
+                                 <h5>Wilshere</h5>
+                                 <ul>
+                                    <li>23 December</li>
+                                    <li>20:00-21:00</li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <!-- END COLUMN-TWO -->
+                           <!-- START COLUMN THREE -->
+                           <div class="column" id="column-three">
+                              <div class="time-wrap">
+                                 <h5>Doss Rockerzz</h5>
+                                 <ul>
+                                    <li>24 December</li>
+                                    <li>12:00-13:00</li>
+                                 </ul>
+                              </div>
+                              <div class="circle-wrap  " id="circle-three">
+                                 <div class="timeline-circle-animation">
+                                    <!-- FOR ANIMATION ON MOUSE OVER -->
+                                 </div>
+                                 <!-- FONT AWESOME ICON -->
+                                 <div class="line line-three">
+                                    <div class="default"></div>
+                                    <div class="active"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- END COLUMN-THREE-->
+                           <!-- START COLUMN-FOUR -->
+                           <div class="column" id="column-four">
+                              <div class="circle-wrap  " id="circle-four">
+                                 <div class="timeline-circle-animation">
+                                    <!-- FOR ANIMATION ON MOUSE OVER -->
+                                 </div>
+                                 <div class="line line-two">
+                                    <div class="default"></div>
+                                    <div class="active"></div>
+                                 </div>
+                              </div>
+                              <!-- -->
+                              <div class="time-wrap">
+                                 <h5>Rebellion</h5>
+                                 <!-- COLUMN 4 HEADER TEXT -->
+                                 <ul>
+                                    <!-- COLUMN 4 SUB-HEADING TEXT -->
+                                    <li>24 December</li>
+                                    <li>13:00-14:00</li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <!-- END COLUMN-FOUR -->
+   </textarea>
+                  </div>
+                  <br>
+                  <h2  class="section-head" id="team">Artist Lineup</h2>
+                  <p>Create an artist with <code>figure</code> tag. </p>
+                  <div   class="code_wrapper">
+                     <textarea id="code-html18" name="code-html2"> 
+	           <!-- START ARTIST -->
+                                    <figure class="effect-artist">
+                                 <img src="images/artist/artist1.jpg"   alt="" />
+                                 <figcaption>
+                                    <!-- NAME -->
+                                    <h2>Laidback Luke</h2>
+                                    <!-- DETAILS -->
+                                    <p>Dutch heavyweight<br> Laidback Luke <br>has a two-decade track<br> record of doing things his way</p>
+                                    <!--VIEW MORE LINK -->
+                                    <a href="#artist-section/artist1"><span class="artist-name">Laidback Luke</span> </a>
+                                 </figcaption>
+                              </figure>
+                                    <!-- END ARTIST -->
+	   </textarea>
+                  </div>
+                  <br>
+                  Each figure tag contain link to detailed description of an artist.Edit this details in div tag with corresponding  data-anchor	 
+                  <div   class="code_wrapper">
+                     <textarea id="code-html18_2"  > 
+	             <<div class="l-slide  artist-slide artist1" data-anchor="artist1" >
+                  <div class="artist-slide-next"><i class="fa fa-angle-right"></i>
+                  </div>
+                  <!-- ARTIST NAME -->
+                  <div class="artist-slide-name">
+                     <h1>Laidback Luke</h1>
+                  </div>
+                  <!-- EVENT DETAILS -->
+                  <div class="artist-slide-details">
+                     <div class="artist-slide-details-center">
+                        <div>
+                           <span>Sept. 2</span> 
+                        </div>
+                        <div>
+                           <span>Rocky Stage</span> 
+                        </div>
+                        <div>
+                           <span>10:30PM</span> 
+                        </div>
+                     </div>
+                  </div>
+                  <!-- SOCIAL LINKS -->
+                  <div class="artist-slide-social">
+                     <a target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                     <a target="_blank" href="https://plus.google.com"><i class="fa fa-google-plus"></i></a>
+                     <a target="_blank" href="https://www.tumblr.com"><i class="fa fa-tumblr"></i></a>
+                     <a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube"></i></a>
+                     <a target="_blank" href="https://vimeo.com"><i class="fa fa-vimeo"></i></a> 
+                  </div>
+                  <div class="artist-slide-prev"><i class="fa fa-angle-left"></i>
+                  </div>
+               </div>
+               <!-- END ARTIST SLIDER CONTENT-->
+	   </textarea>
+                  </div>
+                  <h2  class="section-head" id="sponsors">Sponsors</h2>
+                  <p>You can change sponsor logo in html page  </p>
+                  <div   class="code_wrapper">
+                     <textarea id="code-html11" name="code-html2"> 
+	<a class="col-md-3 " id="sponsor1">
+                              <span class="sponsor_text">
+                                 <!-- PNG ICON -->
+                                 <img src="images/sponsors/1.png"  alt="sponsor">
+                              </span>
+                           </a>
+	 
+	  </textarea>
+                  </div>
+                  <br>
+          
+                  <br>
+               
+                  <h2  class="section-head" id="gallery">Gallery</h2>
+                  <p>Create your gallery with category name inside the div with id <code>galleryHolder</code>.Then specify your category name in gallery filter option.
+                     <br>
+                  <div   class="code_wrapper">
+                     <textarea id="code-html13" name="code-html2"> 
+  <div id="galleryHolder">
+                                 <div class="item catagory1">
+                                    <a href="images/gallery/large/1.jpg" data-gal="prettyPhoto[gallery3]"><img src="images/gallery/1.jpg" alt="gallery" />
+                                    </a>
+                                 </div>
+                                 <div class="item catagory1 catagory2">
+                                    <a href="images/gallery/large/2.jpg" data-gal="prettyPhoto[gallery3]"> <img src="images/gallery/2.jpg" alt="gallery" />
+                                    </a>
+                                 </div>
+                                 
+                                  
+                              </div>
+	  </textarea>
+                  </div>
+                  <br>
+                  <h3>Creating gallery filter option</h3>
+                  <div   class="code_wrapper">
+                     <textarea id="code-html16" name="code-html16">
+<ul id="filterOptions">
+                              <li class="active"><a href="#" class="all"><i class="hi-icon hi-icon-mobil active"></i>All</a>
+                              </li>
+                              <li><a href="#" class="catagory1"><i class="hi-icon hi-icon-mobil"></i>Dance</a>
+                              </li>
+                              <li><a href="#" class="catagory2"><i class="hi-icon hi-icon-mobil"></i>Jazz</a>
+                              </li>
+                           </ul>
+	 
+	  </textarea>
+                  </div>
+                  <br>
+                  <h2  class="section-head" id="faq">Ask Us</h2>
+                  <p>You can add custom number of FAQ tags in html page.</p>
+                  <div   class="code_wrapper">
+                     <textarea id="code-html14" name="code-html2"> 
+	           <div class="askusbar" data-askus-number="1">
+                        <div class="askus-bar">
+                           <div class="askus-question-wrapper" >
+                              <div class="askus_question_background"></div>
+                              <div class="askus_question">?</div>
+                           </div>
+                           <div class="title">
+                              <div class="askus_questions" id="qst_1">I HAVE A QUESTION ABOUT PARTY. </div>
+                              <!-- ASK US QUESTION -->
+                              <div class="askus_sub_content">
+                                 <!-- DESCRIPTION ON MOUSE CLICK -->
+                                 <h3>I HAVE A QUESTION ABOUT PARTY.</h3>
+                                 <p class="hidden askus-questions__answer-text" data-answer-number="1">
+                                    Please contact info@ergo7.net
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="askus_answer"><span>=</span>
+                           </div>
+                        </div>
+                     </div>
+	  </textarea>
+                  </div>
+                  <h2 class="section-head"  id="contact">Contact</h2>
+                  You can edit the contact details inside div with <code>contact-info</code>class in contact section
+                  <div   class="code_wrapper">
+                     <textarea id="code-html19" name="code-html9">
+	             <div class="contact-info-wrapper"  > 
+                           <div class="contact-info text-center col-sm-12 fadeIn animated">
+                              <div class="col-sm-4">
+                                 <h3>Enjoy The Show</h3>
+                                 <p>57 Mainstreet, MainTower, Barcelona</p>
+                              </div>
+                              <div class="col-sm-4">
+                                 <div class="phone">
+                                    <h3>Call Us</h3>
+                                    <p>+99(004) 987-654-3210</p>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4">
+                                 <div class="email">
+                                    <h3>Write us a email</h3>
+                                    <p>contact@ergo7.com</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+	   </textarea>
+                     <br>
+                     <p>
+                        Form Validation is done automatically by the script(contact.js). Your Email ID must be placed inside "contact.php" file inorder to receive mails.
+                     </p>
+                     <p>
+                        <code> define('TO_EMAIL', '"Test mail" <yourmail@mail.com/>'); </code>
+                     </p>
+                  </div>
+
+
+                   <h2 class="section-head" id="comingSoon">Coming Soon/404 Page</h2>
+
+                        <p>1.Ceating SVG text</p>
+                        <p>First we will create our SVG element. The x and y values are the offset positions for the text. The font(s) we wish to use are written in style sheet.Replace the text values with your own</p>
+
+
+                        <form>
+                            <div class="code_wrapper" style=" margin-bottom: 1em">
+                            <h3>Coming Soon</h3>
+                                <textarea id="code-html9" name="code-html9">
+<svg  >
+                              <!--ALL TEXT YOU WANT -->
+                              <text id="coming-soon-title" x="50%" y="15%"  dy=".6em" >WE'RE COMING SOON!</text>
+                              <text id="coming-soon-subtitle" x="50%" y="75%"  >stay tuned </text>
+                              <text id="coming-soon-desc" x="50%" y="81%"   >
+                                 We are busy working on something awesome. 
+                              </text>
+                           </svg>
+                                </textarea>
+                            </div>
+
+
+                        </form>
+
+                        <form>
+                            <div class="code_wrapper" style=" margin-bottom: 1em">
+                             <h3>404 Page</h3>
+                                <textarea id="code-html10" name="code-html10">
+ <svg  >
+                              <!--ALL TEXT YOU WANT -->
+                              <text id="title_404" x="50%" y="35%"  dy=".6em" >Page Not Found</text>
+                              <text id="subtitle_404" x="50%" y="75%"  >Error 404 </text>
+                              <text id="desc_404" x="50%" y="80%"   >
+                              </text>
+                              <text id="desc2_404" x="50%" y="82%"   >
+                                 The page you are looking for was moved or never existed 
+                              </text>
+                           </svg>
+                                </textarea>
+                            </div>
+
+
+                        </form>
+
+
+
+                        <p>Change transparent text background colour </p>
+                        <p>For this you want to edit style in <code>text-slider.html/404.html</code> file</p>
+
+                        <div class="code_wrapper" style="margin-bottom: 1em">
+                            <textarea id="code-css6" name="code">
+                           </svg>
+svg #base 
+{ 
+    fill: rgba(0, 0, 0, 0.79);
+    -webkit-mask: url(#mask); 
+    mask: url(#mask); 
+ }
+
+                            </textarea>
+                        </div>
+
+                        <p>3.How to change background image </p>
+                        <p>You can customise slider in <code>style.css</code> file. 
+                        </p>
+
+                        <div class="code_wrapper">
+                         <h3>Coming Soon</h3>
+                            <textarea id="code-css7" name="code-css7">
+.ergo_slider-pic1.coming-soon{
+  background: url(../images/1.jpg) no-repeat center center;
+}
+ 
+.ergo_slider-pic2.coming-soon{
+  background: url(../images/2.jpg) no-repeat center center;
+}
+.ergo_slider-pic3.coming-soon{
+  background: url(../images/3.jpg) no-repeat center center;
+}
+                            </textarea>
+                        </div>
+
+                                <div class="code_wrapper">
+                                 <h3>404 Page</h3>
+                            <textarea id="code-css8" name="code-css8">
+.ergo_slider-pic1.error-page{
+  background: url(../images/1.jpg) no-repeat center center;
+} 
+.ergo_slider-pic2.error-page{
+  background: url(../images/2.jpg) no-repeat center center;
+}
+.ergo_slider-pic3.error-page{
+  background: url(../images/3.jpg) no-repeat center center;
+}
+                            </textarea>
+                        </div>
+
+
+
+                  <script id="script"></script>
+                
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+      </div>
+      <!-- /#wrapper -->
+      <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
+      <!-- Menu Toggle Script -->
+      <script>
+         $("#menu-toggle").click(function(e) {
+             e.preventDefault();
+             $("#wrapper").toggleClass("toggled");
+         });
+      </script>
+   </body>
+</html>
