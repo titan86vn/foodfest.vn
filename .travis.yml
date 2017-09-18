@@ -1,4 +1,3 @@
-language: nodejs
 deploy:
     provider: firebase
     token:
