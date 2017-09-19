@@ -1,5 +1,14 @@
-deploy:
-    provider: firebase
-    token:
-        secure: "SKwqrCPl8QA4actSV6UqNIx1rs0yWa3ot06gSdD5VW/Q2nHAjx/n4cSvZUdRTL9RheIlBsTrK6BWg1UsoD7jXYsbaLDEkc5oCbqL3qJHUW+7/7IdU3HTEjsT2QDhHhS+bF3WzOkctI8v6LCO9CWxjPUo1y1/6L8mK+rBf0tJz4fvXa4y8Gde4huAbd7yowTwYHK79oVSL359zkU1PQxuNkKERGfxGV0b5nq0D9GHjv3BzzTLByj6q/pCBIc7KTtoQJ2Z6T1PltfYfNupv4bW3lZLs8qnXYxd60zDMSbRsanFJSp2Ou3qofPCJdFgHN/8T2FnqZhzE6lZb5Hm4mTFyiKIBwrgg4w1PwHG5jj8uwW2lRVXtFBORnkls7YujA2+0gEZ8gBjRUTHs/zXWqq8nyblC/G+WXlF2S7AVI/Eb0ZceAA/3uX4LSI25I/BaqUOb6utVu0KjtcvU09Syk7RXM4LYH0lnBsC0j47T3UeyqagTGyLX3axLUvrQMaei8oOh0U55gOip/V4Vpwcl0dutgAdBVrod7vyvwcufj9DzTyOtDv2VEk9CEaYWMAIjHuoWIrj3Yn6y/pC0pdbcBDj/c3VmbJ74f4tXfgMNvbVHPfaikOBdXGZnpBeirMzIB2Mz+tzZqAgkgyL3B++vzbpBgK8mPs6hKaWJwjbr66rCwo="
-    project: "foodfest-d0543"
+language: node_js
+
+node_js:
+ - "stable"
+
+branches:
+ only:
+  - master
+
+before_script:
+ - npm install -g firebase-tools
+
+after_success:
+ - firebase deploy --token $FIREBASE_API_TOKEN --project foodfest-d0543
